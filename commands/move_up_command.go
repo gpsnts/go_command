@@ -11,5 +11,5 @@ type MoveUpCommand struct {
 
 // Exec executa a ação do Command (Mover para cima)
 func (c *MoveUpCommand) Exec() {
-	c.Character.MoveRight()
+	c.Character.MoveUp()
 }
