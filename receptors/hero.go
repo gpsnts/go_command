@@ -19,20 +19,20 @@ func (h *Hero) Defend() {
 
 // MoveUp simboliza o movimento para cima
 func (h *Hero) MoveUp() {
-	h.position = "Cima"
+	fmt.Println("Moveu-se para cima")
 }
 
 // MoveDown simboliza o movimento para baixo
 func (h *Hero) MoveDown() {
-	h.position = "Baixo"
+	fmt.Println("Moveu-se para baixo")
 }
 
 // MoveLeft simboliza o movimento para esquerda
 func (h *Hero) MoveLeft() {
-	h.position = "Esquerda"
+	fmt.Println("Moveu-se para esquerda")
 }
 
 // MoveRight simboliza o movimento para direita
 func (h *Hero) MoveRight() {
-	h.position = "Direita"
+	fmt.Println("Moveu-se para direita")
 }
