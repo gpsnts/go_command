@@ -2,28 +2,22 @@ package main
 
 import (
 	c "trabgb/commands"
-	i "trabgb/invocators"
-	d "trabgb/receptors"
+	r "trabgb/receptors"
 )
 
 func main() {
-	tv := &d.Tv{}
+	hero := &r.Hero{}
 
-	onCommand := &c.OnCommand{
-		Device: tv,
+	attackCommand := &c.AttackCommand{
+		Character: hero,
 	}
 
-	offCommand := &c.OffCommand{
-		Device: tv,
+	attackCommand.Exec()
+
+	defendCommand := &c.DefendCommand{
+		Character: hero,
 	}
 
-	onButton := &i.Button{
-		Command: onCommand,
-	}
-	onButton.Press()
+	defendCommand.Exec()
 
-	offButton := &i.Button{
-		Command: offCommand,
-	}
-	offButton.Press()
 }
